@@ -1,35 +1,34 @@
 package kg.attractor.java;
 
- import static java.util.stream.Collectors.*;
- import static java.util.Comparator.*;
+ import kg.attractor.java.homework.RestaurantOrders;
 
-// используя статические imports
-// мы импортируем *всё* из Collectors и Comparator.
-// теперь нам доступны такие операции как
-// toList(), toSet() и прочие, без указания уточняющего слова Collectors. или Comparator.
-// вот так было до импорта Collectors.toList(), теперь стало просто toList()
-
-
-import kg.attractor.java.homework.RestaurantOrders;
  import kg.attractor.java.homework.domain.Order;
 
  import java.util.List;
 
 public class Main {
 
-
     public static void main(String[] args) {
 
-        // это для домашки
-        // выберите любое количество заказов, какое вам нравится.
 
-//        var orders = RestaurantOrders.read("orders_100.json").getOrders();
-        var orders = RestaurantOrders.read("orders_1000.json").getOrders();
-        //var orders = RestaurantOrders.read("orders_10_000.json").getOrders();
+        List<Order> orders = RestaurantOrders.read("orders_1000.json").getOrders();
 
-        // протестировать ваши методы вы можете как раз в этом файле (или в любом другом, в котором вам будет удобно)
+//        RestaurantOrders.print(orders);
+//        Order.OrdersGreatestSum();
+//        System.out.println(Order.OrderMinSum(orders));
+        System.out.println(Order.OrderMaxSum(orders));
+//        Order.lowOrderPrice(orders);
+
+
+
+
+
+
+
+
+
+
 
 
     }
-
 }

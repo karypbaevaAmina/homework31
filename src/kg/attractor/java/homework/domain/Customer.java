@@ -1,6 +1,13 @@
 package kg.attractor.java.homework.domain;
 
-import java.util.Objects;
+import kg.attractor.java.homework.RestaurantOrders;
+
+import java.util.*;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.*;
 
 public class Customer {
     // Этот блок кода менять нельзя! НАЧАЛО!
@@ -34,12 +41,25 @@ public class Customer {
         return email;
     }
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "fullName='" + fullName + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 
-    // Этот блок кода менять нельзя! КОНЕЦ!
 
-    //----------------------------------------------------------------------
-    //------   Реализация ваших методов должна быть ниже этой линии   ------
-    //----------------------------------------------------------------------
+    }
 
 
-}
+
+
+
+
+
+
+
+
+
+

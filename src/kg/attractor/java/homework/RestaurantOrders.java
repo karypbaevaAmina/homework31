@@ -6,11 +6,14 @@ import kg.attractor.java.homework.domain.Order;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
 
 public class RestaurantOrders {
+
     // Этот блок кода менять нельзя! НАЧАЛО!
+
     private List<Order> orders;
 
     private RestaurantOrders(String fileName) {
@@ -29,19 +32,16 @@ public class RestaurantOrders {
         return ro;
     }
 
-
     public List<Order> getOrders() {
         return orders;
     }
-    // Этот блок кода менять нельзя! КОНЕЦ!
 
-    //----------------------------------------------------------------------
-    //------   Реализация ваших методов должна быть ниже этой линии   ------
-    //----------------------------------------------------------------------
+    public static void print (List<Order> orders){
+        orders.forEach( Order::print);
+    }
 
-    // Наполните этот класс решением домашнего задания.
-    // Вам необходимо создать все необходимые методы
-    // для решения заданий из домашки :)
-    // вы можете добавлять все необходимые imports
-    //
+
+
+
+
 }
